@@ -3,31 +3,35 @@
 <html>
 
 	<head>
-		<title>Jess's Week 7 Class Work</title>
+		<title>Welcome to your next adventure.</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body id="body">	
-<!-- ** This is for IN CLASS PROJECT ** -->
 
-	<!-- REGISTER FORM -->
-	<h1>Register or Sign Up here!</h1> <br>
-	<p>Username:</p>
-	<input type="text" name="username" id="user">
-	<p>Password:</p>
-	<input type="text" name="pw" id="pw"> <br><br>
-	<button id="btnSubmit" onClick="store()">Register</button>
+		<!-- REGISTER FORM -->
+		<form id="register-form">
+			<h1>Register here!</h1> 
+			<p>Username:</p><input type="text" name="username" id="regUser">
+			<p>Password:</p><input type="password" name="pw" id="regPw"> <br><br>
+			<!-- <button id="btnReg" onclick="store()"> Register </button> -->
+			<input type="button" onclick="store()" value="Register"/>
+			<input type="reset" value="Cancel"/>
+		</form>
 
-	<!-- LOGIN FORM -->
-	<h1>Login here!</h1>
-	<p>Username:</p>
-	<input type="text" name="username" id="user">
-	<p>Password:</p>
-	<input type="text" name="pw" id="pw"> <br><br>
-	<button id="btnSubmit" onClick="check()">Login</button>
-
+		<!-- LOGIN FORM -->
+		<form id="login-form">
+			<h1>Login here!</h1>
+			<p>Username:</p><input type="text" name="username" id="lgnUser">
+			<p>Password:</p><input type="password" name="pw" id="lgnPw"> <br><br>
+			<!-- <button id="btnSubmit" onclick="check()">Login</button> -->
+			<input type="button" onclick="check()" value="Login"/>
+			<input type="reset" value="Cancel"/>
+		</form>
 
 	<script type="text/javascript" src="app.js"></script>
 	</body>
 
 </html>
+
+<!-- *not super important but i'm not sure if the button element is preferred over the input type button element. -->
